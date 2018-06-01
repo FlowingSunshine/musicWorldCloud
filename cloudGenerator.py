@@ -2,16 +2,19 @@
 from os import path
 import sys
 sys.path.append('/usr/local/lib/python2.7/site-packages/')
+
 from scipy.misc import imread
 import matplotlib.pyplot as plt
 
+import wordcloud
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-font_path="STHeiti Medium.ttc"
+
+font_path="msyh.ttf"
 data=path.dirname('.')
-text=open(path.join(data,'count.txt')).read()
+text=open(path.join(data,'test.txt')).read()
 
 def cloudGenerator(data,text):
-	wifeImg=imread(path.join(data,"background.jpeg"))
+	wifeImg=imread(path.join(data,"background.jpg"))
 	wc = WordCloud(font_path=font_path,background_color="white",mask=wifeImg,stopwords="",max_font_size=100,random_state=40)
 	wc.generate(text)
 	image_colors=ImageColorGenerator(wifeImg)

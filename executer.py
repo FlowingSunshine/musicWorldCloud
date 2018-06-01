@@ -5,7 +5,7 @@ sys.path.append("dataprocess.py")
 import singerSpider as ss
 import dataprocess as dp
 
-url='http://music.163.com/playlist?id=40177729'
+url='http://music.163.com/playlist?id=373126389'
 	#file=file('results.txt','a')
 headers = {
      	'Referer':'http://music.163.com/',

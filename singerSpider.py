@@ -53,9 +53,9 @@ def execSong(url,headers):
 
 	except:
 		pass
-"""
+'''
 if __name__ == '__main__':
-	url='http://music.163.com/playlist?id=40177729'
+	url='http://music.163.com/user/home?id=272269212'
 	#file=file('results.txt','a')
 	headers = {
         'Referer':'http://music.163.com/',
@@ -66,4 +66,4 @@ if __name__ == '__main__':
 
 	execList(url,file,headers)
 	#file.close()
-"""
+'''
